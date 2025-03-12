@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Video</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ensuring the body takes up the full height of the viewport */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Video background styling */
+    .video-background {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the whole screen */
+    }
+
+    /* Styling for the text */
+    .video-background h1 {
+      position: absolute;
+      top: 20px; /* Positioning text 20px from the top */
+      left: 20px; /* Positioning text 20px from the left */
+      font-size: 3rem; /* Adjust the font size as needed */
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <div class="video-background">
+    <h1>Merry Christmas!</h1>
+    <video autoplay muted loop id="background-video">
+      <source src="vecteezy_background-video-merry-christmas-hd-loop_4984757.mov" type="video/mp4">
+      <!-- Optionally, include other formats for browser compatibility -->
+      <source src="your-video.webm" type="video/webm">
+      <source src="your-video.ogv" type="video/ogv">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Page content -->
+  <div class="content">
+    <!-- Additional page content can go here -->
+  </div>
+</body>
+</html>
